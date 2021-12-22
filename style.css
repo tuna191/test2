@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #dadada;
+}
+.col {
+    width: 22%;
+    float: left;
+    margin: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    /* overflow: hidden;  thuoc tinh se lam anh zoom trong khung cua anh */
+}
+img {
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.2s;
+}
+#content {
+    margin: 83px 0;
+}
+ .col:hover img{
+    transform: scale(1.3);
+}
+#content::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+#content::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span.close {
+    color: wheat;
+    float: right;
+    font-size: 42px;
+    margin: -57px 58px;
+}
+.gallery {
+    display: flex;
+    align-items: center;
+    /* margin: 0 0; */
+    justify-content: center;
+}
+span.right {
+    color: wheat;
+    font-size: 40px;
+    margin: 14px;
+}
+img.img {
+    width: 65%;
+    height: auto;
+    /* margin: 29px; */
+}
+span.next {
+    color: wheat;
+    font-size: 40px;
+    margin: 10px;
+}
+.show{
+   display: none;
+
+}
+.hide{
+    display: none;
+}
